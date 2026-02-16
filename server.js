@@ -18,7 +18,10 @@ app.get('/', (req, res) => {
         message: "Welcome to the Books API", 
         endpoints: { 
             "GET /api/books": "Get all books", 
-            "GET /api/books/:id": "Get a specific book by ID" 
+            "GET /api/books/:id": "Get a specific book by ID",
+            "POST /api/books": "Add a new book",
+            "PUT /api/books/:id": "Update a book by ID",
+            "DELETE /api/books/:id": "Delete a book by ID"
         } 
     }); 
 });
